@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cytonn Investments Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <img src="images/cytonn-logo-header.png" alt="Cytonn Investments">
+        <h1> Cytonn Investments Management</h1>
+        <input type="text" id="clientNameInput" placeholder="Client Name">
+        <input type="text" id="investmentSolutionInput" placeholder="Investment Solution">
+        <div class="buttons">
+            <button onclick="createInvestment()">Create</button>
+            <button onclick="readInvestment()">Read</button>
+            <button onclick="updateInvestment()">Update</button>
+            <button onclick="deleteInvestment()">Delete</button>
+        </div>
+        <table id="investmentTable">
+            <thead>
+                <tr>
+                    <th>Client Name</th>
+                    <th>Investment Solution</th>
+                </tr>
+            </thead>
+            <tbody id="investmentTableBody">
+                <!-- Table content will be added dynamically -->
+            </tbody>
+        </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
