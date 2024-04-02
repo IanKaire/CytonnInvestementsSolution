@@ -65,3 +65,25 @@ th {
     background-color: #006B5B;
     color: #fff;
 }
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+    .container {
+        max-width: 90%;
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+    .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    button {
+        margin: 5px;
+    }
+}
